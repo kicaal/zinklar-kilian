@@ -1,3 +1,4 @@
+import { VITE_API_URL } from "../../../constants";
 import {
   Branch,
   GithubRepository,
@@ -15,7 +16,7 @@ import {
 
 const BASE_URL = "https://api.github.com/repos";
 
-const TOKEN = import.meta.env.VITE_API_URL;
+const TOKEN = VITE_API_URL;
 
 export const GithubRepositoryApi = (): GithubRepository => {
   return {
